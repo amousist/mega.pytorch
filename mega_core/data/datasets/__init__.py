@@ -10,6 +10,7 @@ from .vid_rdn import VIDRDNDataset
 from .vid_mega import VIDMEGADataset
 from .vid_fgfa import VIDFGFADataset
 from .vid_dff import VIDDFFDataset
+from .vid_pedestrian import VIDPEDDataset
 
 __all__ = [
     "COCODataset",
@@ -21,5 +22,6 @@ __all__ = [
     "VIDRDNDataset",
     "VIDMEGADataset",
     "VIDFGFADataset",
-    "VIDDFFDataset"
+    "VIDDFFDataset",
+    "VIDPEDDataset"
 ]

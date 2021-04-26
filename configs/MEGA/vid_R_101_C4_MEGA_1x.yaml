@@ -13,5 +13,5 @@ MODEL:
     FEATURE_EXTRACTOR: "MEGAFeatureExtractor"
     PREDICTOR: "FPNPredictor"
 DATASETS:
-  TRAIN: ("DET_train_30classes", "VID_train_15frames")
+  TRAIN: ("VID_train_15frames",)
   TEST: ("VID_val_videos",)

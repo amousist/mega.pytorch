@@ -155,9 +155,9 @@ class DatasetCatalog(object):
             "img_index": "ILSVRC2015/ImageSets/DET_train_30classes.txt"
         },
         "VID_train_15frames": {
-            "img_dir": "ILSVRC2015/Data/VID",
-            "anno_path": "ILSVRC2015/Annotations/VID",
-            "img_index": "ILSVRC2015/ImageSets/VID_train_15frames.txt"
+            "img_dir": "P-DESTRE-IMGNET/Data/VID",
+            "anno_path": "P-DESTRE-IMGNET/Annotations/VID",
+            "img_index": "P-DESTRE-IMGNET/ImageSets/VID_train_15frames.txt"
         },
         "VID_train_every10frames": {
             "img_dir": "ILSVRC2015/Data/VID",
@@ -173,6 +173,11 @@ class DatasetCatalog(object):
             "img_dir": "ILSVRC2015/Data/VID",
             "anno_path": "ILSVRC2015/Annotations/VID",
             "img_index": "ILSVRC2015/ImageSets/VID_val_videos.txt"
+        },
+        "VID_train_pedestrian": {
+            "img_dir": "P-DESTRE-IMGNET/Data/VID",
+            "anno_path": "P-DESTRE-IMGNET/Annotations/VID",
+            "img_index": "P-DESTRE-IMGNET/ImageSets/VID/VID_train_15frames.txt"
         }
     }
 
@@ -212,7 +217,8 @@ class DatasetCatalog(object):
                 "rdn": "VIDRDNDataset",
                 "mega": "VIDMEGADataset",
                 "fgfa": "VIDFGFADataset",
-                "dff": "VIDDFFDataset"
+                "dff": "VIDDFFDataset",
+                "pedestre": "VIDPEDDataset"
             }
             if ("DET" in name) or ("VID" in name):
                 data_dir = DatasetCatalog.DATA_DIR

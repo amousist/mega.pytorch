@@ -5,7 +5,7 @@ import numpy as np
 from .vid import VIDDataset
 from mega_core.config import cfg
 
-class VIDMEGADataset(VIDDataset):
+class VIDPEDDataset(VIDDataset):
     classes = ['__background__',  # always index 0
                 'pedestrian']
     classes_map = ['__background__',  # always index 0
