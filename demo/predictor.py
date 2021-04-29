@@ -306,14 +306,7 @@ class Resize(object):
 
 class VIDDemo(object):
     CATEGORIES = ['__background__',  # always index 0
-                  'airplane', 'antelope', 'bear', 'bicycle',
-                  'bird', 'bus', 'car', 'cattle',
-                  'dog', 'domestic_cat', 'elephant', 'fox',
-                  'giant_panda', 'hamster', 'horse', 'lion',
-                  'lizard', 'monkey', 'motorcycle', 'rabbit',
-                  'red_panda', 'sheep', 'snake', 'squirrel',
-                  'tiger', 'train', 'turtle', 'watercraft',
-                  'whale', 'zebra']
+                  'SIX-human']
 
     def __init__(
             self,
