@@ -306,7 +306,7 @@ class Resize(object):
 
 class VIDDemo(object):
     CATEGORIES = ['__background__',  # always index 0
-                  'SIX-human']
+                  'Human']
 
     def __init__(
             self,
@@ -577,7 +577,7 @@ class VIDDemo(object):
             box = box.to(torch.int64)
             top_left, bottom_right = box[:2].tolist(), box[2:].tolist()
             image = cv2.rectangle(
-                image, tuple(top_left), tuple(bottom_right), tuple(color), 1
+                image, tuple(top_left), tuple(bottom_right), (70,250,255), 1
             )
 
         return image
@@ -601,7 +601,10 @@ class VIDDemo(object):
             x, y = box[:2]
             s = template.format(label, score)
             cv2.putText(
-                image, s, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2
+                image, s, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255, 255, 255), 2
+            )
+            cv2.putText(
+                    image, "COUNT: {} Humans".format(len(boxes)), (560, 520), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (70, 250, 255), 2
             )
 
         return image
