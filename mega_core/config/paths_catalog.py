@@ -165,9 +165,9 @@ class DatasetCatalog(object):
             "img_index": "ILSVRC2015/ImageSets/VID_train_every10frames.txt"
         },
         "VID_val_frames": {
-            "img_dir": "ILSVRC2015/Data/VID",
-            "anno_path": "ILSVRC2015/Annotations/VID",
-            "img_index": "ILSVRC2015/ImageSets/VID_val_frames.txt"
+            "img_dir": "P-DESTRE-IMGNET/Data/VID",
+            "anno_path": "P-DESTRE-IMGNET/Annotations/VID",
+            "img_index": "P-DESTRE-IMGNET/ImageSets/VID_val_frames.txt"
         },
         "VID_val_videos": {
             "img_dir": "ILSVRC2015/Data/VID",

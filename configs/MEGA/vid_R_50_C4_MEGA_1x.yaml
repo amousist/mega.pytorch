@@ -18,4 +18,4 @@ MODEL:
     PREDICTOR: "FPNPredictor"
 DATASETS:
   TRAIN: ("VID_train_15frames",)
-  TEST: ("VID_val_videos",)
+  TEST: ("VID_val_frames",)
